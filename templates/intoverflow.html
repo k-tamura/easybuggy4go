@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+{{template "head" .}}
+<body style="margin-left: 20px; margin-right: 20px;" class="nav">
+    {{template "header" .}}
+    <form action="iof" method="post" enctype="application/x-www-form-urlencoded">
+        <p data-i18n="msg.question_reach_the_moon"></p>
+        <input type="text" name="times" size="2" maxlength="2" value="{{.times}}"/>
+        <span data-i18n="label.times"></span><span> : {{.description}}</span>
+        {{if eq .times "42"}}
+        <span> : </span><span data-i18n="msg.answer_is_correct"></span>
+        {{end}}
+        <br/><br/>
+        <button id="btn" data-i18n="label.calculate"></button>
+        <br/><br/>
+        {{template "messages" .}}
+    </form>
+</body>
+</html>

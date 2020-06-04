@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+{{template "head" .}}
+<body style="margin-top: 20px; margin-left: 20px; margin-right: 20px;" class="nav">
+	<header>
+		<table style="width: 720px;">
+			<tr>
+				<td rowspan="1" colspan="1">
+					<img src="images/easybuggy.png" class="bounceInRight animated" width="324px" height="116px" />
+				</td>
+				<td rowspan="1" colspan="1"><span class="glyphicon glyphicon-warning-sign"></span>
+					<span data-i18n="description.all"></span>
+				</td>
+			</tr>
+		</table>
+	</header>
+	<hr />
+    
+	<h2>
+		<span class="glyphicon glyphicon-knight"></span> 
+        <span data-i18n="section.troubles"></span>
+	</h2>
+	<p data-i18n="description.troubles"></p>
+	<ul>
+		<!--
+		<li><p><a href="deadlock" shape="rect">デッドロック (Java)</a>: <span>デッドロック(Java)を発生させることができます。</span></p></li>
+		<li><p><a href="deadlock2" shape="rect">デッドロック (SQL)</a>: <span>デッドロック(SQL)を発生させることができます。</span></p></li>
+		<li><p><a href="endlesswaiting" shape="rect">完了しないプロセスの待機</a>: <span>完了しないプロセスの待機を発生させることができます。</span></p></li>
+		<li><p><a href="infiniteloop" target="_blank" shape="rect">無限ループ</a>: <span>このリンクをクリックすると、無限ループが発生します。</span></p></li>
+		<li><p><a href="redirectloop" target="_blank" shape="rect">リダイレクトループ</a>: <span>このリンクをクリックすると、リダイレクトループが発生します。</span></p></li>
+		<li><p><a href="forwardloop" target="_blank" shape="rect">フォワードループ</a>: <span>このリンクをクリックすると、フォワードループが発生します。</span></p></li>
+		<li><p><a href="jvmcrasheav" target="_blank" shape="rect">JVMクラッシュ</a>: <span>このリンクをクリックするとJVMがクラッシュします。</span></p></li>
+		<li><p><a href="memoryleak" shape="rect">メモリリーク (Javaヒープ領域)</a>: <span>このページをロードするたびに、Javaヒープ領域のメモリリークが発生します。</span></p></li>
+		<li><p><a href="memoryleak2" shape="rect">メモリリーク (Metaspace)</a>: <span>このページをロードするたびに、Metaspaceのメモリリークが発生します。</span></p></li>
+		<li><p><a href="memoryleak3" shape="rect">メモリリーク (Cヒープ領域)</a>: <span>このページをロードするたびに、Cヒープ領域のメモリリークが発生します。</span></p></li>
+		<li><p><a href="netsocketleak" shape="rect">ネットワークソケットリーク</a>: <span>このページをロードするたびに、ネットワークソケットリークが発生します。</span></p></li>
+		<li><p><a href="dbconnectionleak " shape="rect">データベースコネクションリーク</a> :<span>このページをロードするたびに、データベースコネクションリークが発生します。</span></p></li>
+		<li><p><a href="filedescriptorleak " shape="rect">ファイルディスクリプタリーク</a> :<span>このページをロードするたびに、ファイルディスクリプタリークが発生します。</span></p></li>
+		<li><p><a href="threadleak" shape="rect">スレッドリーク</a>: <span>このページをロードするたびに、スレッドリークが発生します。</span></p></li>
+		<li><p><a href="mojibake" shape="rect">文字化け</a>: <span>特定の文字列を入力すると、文字化けが発生します。</span></p></li>
+		-->
+		<li><p><a href="iof" shape="rect" data-i18n="function.name.intoverflow"></a>: <span  data-i18n="function.description.intoverflow"></span></p></li>
+		<!--
+		<li><p><a href="roe" shape="rect">丸め誤差</a>: <span>丸め誤差を発生させることができます。</span></p></li>
+		<li><p><a href="te" shape="rect">打ち切り誤差</a>: <span>打ち切り誤差を発生させることができます。</span></p></li>
+		<li><p><a href="lotd" shape="rect">情報落ち</a>: <span>情報落ちを発生させることができます。</span></p></li>
+		-->
+	</ul>
+    
+<!--
+	<h2>
+		<span class="glyphicon glyphicon-knight"></span> 
+        <span>脆弱性</span>
+	</h2>
+	<p>XSS、SQLインジェクション、LDAPインジェクションなど</p>
+	<ul>
+		<li><p><a href="xss" shape="rect">XSS (クロスサイトスクリプティング)</a>: <span>このページにはXSSの脆弱性があります。</span></p></li>
+		<li><p><a href="sqlijc" shape="rect">SQLインジェクション</a>: <span>このページにはSQLインジェクションの脆弱性があります。</span></p></li>
+		<li><p><a href="admins/main?logintype=ldapijc" shape="rect">LDAPインジェクション</a>: <span>このページにはLDAPインジェクションの脆弱性があります。</span></p></li>
+		<li><p><a href="codeijc" shape="rect">コードインジェクション</a>: <span>このページにはコードインジェクションの脆弱性があります。</span></p></li>
+		<li><p><a href="ognleijc" shape="rect">OSコマンドインジェクション</a>: <span>このページにはOSコマンドインジェクションの脆弱性があります。</span></p></li>
+		<li><p><a href="mailheaderijct" shape="rect">メールヘッダーインジェクション</a>: <span>このページにはメールヘッダーインジェクションの脆弱性があります。</span></p></li>
+		<li><p><a href="nullbyteijct" shape="rect">Nullバイトインジェクション</a>: <span>このページにはNullバイトインジェクションの脆弱性があります。</span></p></li>
+		<li><p><a href="ursupload" shape="rect">サイズ制限の無いファイルアップロード</a>: <span>このページにはファイルアップロードのサイズ制限が無いため、DoS攻撃などに対して脆弱です。</span></p></li>
+		<li><p><a href="ureupload" shape="rect">拡張子制限の無いファイルアップロード</a>: <span>このページにはファイルアップロードの拡張子制限が無いため、コードインジェクションなどに対して脆弱です。</span></p></li>
+		<li><p><a href="admins/main?logintype=openredirect&amp;goto=/uid/serverinfo.jsp" shape="rect">オープンリダイレクト可能なログイン画面</a>: <span>このログインページにはオープンリダイレクトの脆弱性があります。</span></p></li>
+		<li><p><a href="admins/main?logintype=bruteforce" shape="rect">ブルートフォース攻撃可能なログイン画面</a>: <span>このログインページにはアカウントロックが無いため、ブルートフォース攻撃に対しての脆弱です。</span></p></li>
+		<li><p><a shape="rect" href="admins/main;jsessionid=C4AE2AE70A1D9CBFB72D9B10F7E2CD7C?logintype=sessionfixation">セッション固定攻撃可能なログイン画面</a>: <span>このログインページにはセッション固定攻撃の脆弱性があります。</span></p></li>
+		<li><p><a href="admins/main?logintype=verbosemsg" shape="rect">親切過ぎる認証エラーメッセージ</a>: <span>このログインページのエラーメッセージは親切過ぎるため、IDとパスワードが推測される可能性が高いです。</span></p></li>
+		<li><p><a href="/dfi/includable.jsp?template=style_bootstrap.html" shape="rect">危険なファイルインクルード</a>: <span>このページでは外部の危険なファイルをインクルード可能です。</span></p></li>
+		<li><p><a href="/dt/includable.jsp?template=basic" shape="rect">パストラバーサル</a>: <span>このページにはパストラバーサルの脆弱性があります。</span></p></li>
+		<li><p><a href="/uid/clientinfo.jsp" shape="rect">意図しないファイル公開</a>: <span>このページには意図しないファイル公開の脆弱性があります。</span></p></li>
+		<li><p><a href="/admins/csrf" shape="rect">CSRF (クロスサイトリクエストフォージェリ)</a>: <span>パスワード変更ページにはCSRFの脆弱性があります。</span></p></li>
+		<li><p><a href="/admins/clickjacking" shape="rect">クリックジャッキング</a>: <span>メールアドレス変更ページにはクリックジャッキングの脆弱性があります。</span></p></li>
+		<li><p><a href="xee" shape="rect">XEE (XMLエンティティ拡張)</a>: <span>このページにはXEEの脆弱性があります。</span></p></li>
+		<li><p><a href="xxe" shape="rect">XXE (XML外部エンティティ)</a>: <span>このページにはXXEの脆弱性があります。</span></p></li>
+	</ul>
+
+    
+	<h2>
+		<span class="glyphicon glyphicon-knight"></span> 
+        <span>性能問題</span>
+	</h2>
+	<p>性能に関する問題</p>
+	<ul>
+		<li><p><a href="slowre" shape="rect">正規表現解析による遅延</a>: <span>特定の文字列を入力すると、正規表現の解析に時間がかかります。</span></p></li>
+		<li><p><a href="strplusopr" shape="rect">プラス演算子による文字列結合の遅延</a>: <span>大きな文字数を入力すると、文字列連結に時間がかかります。</span></p></li>
+		<li><p><a href="createobjects" shape="rect">不必要なオブジェクト生成による遅延</a>: <span>大きな数値を入力すると、不必要なオブジェクト生成により、応答時に時間がかかります。</span></p></li>
+	</ul>
+-->
+	<hr />
+	<footer>
+		<img src="images/easybuggyL.png" />Copyright &copy; 2020 T246 OSS Lab, all rights reserved.<br /><br />
+	</footer>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+{
+  "msg": {
+    "answer_is_correct": "Your answer is correct!",
+    "question_reach_the_moon": "How many times would you have to fold a piece of paper (thickness 0.1mm) for it to be thick enough to reach the moon (384,400 km)?"
+  },
+  "note": {
+    "intoverflow": "Integer overflow occurs if you enter a number greater than or equal to 63."
+  },
+  "title": {
+    "intoverflow": "The Distance from Earth to the Moon"
+  },
+  "function": {
+    "name": {
+      "intoverflow": "Integer Overflow"
+    },
+    "description": {
+      "intoverflow": "Integer overflow can occur."
+    }
+  },
+  "description": {
+    "all": "Warning: Several links cause severe memory leaks or increase CPU usage rate. They can make your computer unstable. The results may change depending on JRE type / version, JVM option, OS, hardware (memory, CPU) or etc.",
+    "troubles": "Memory leak, infinite loop, deadlock, and so on:"
+  },
+  "section": {
+    "troubles": "Troubles"
+  },
+  "label": {
+    "times": "times",
+    "calculate": "calculate",
+    "go_to_main": "Go to main page"
+  }
+}
