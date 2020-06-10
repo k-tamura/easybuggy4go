@@ -1,20 +1,25 @@
 {
   "msg": {
     "answer_is_correct": "Your answer is correct!",
+    "enter_decimal_value": "Please enter the absolute value of a decimal number less than 1.",
     "question_reach_the_moon": "How many times would you have to fold a piece of paper (thickness 0.1mm) for it to be thick enough to reach the moon (384,400 km)?"
   },
   "note": {
-    "intoverflow": "Integer overflow occurs if you enter a number greater than or equal to 63."
+    "intoverflow": "Integer overflow occurs if you enter a number greater than or equal to 63.",
+    "lossoftrailingdigits": "Loss of trailing digits occurs if you enter 0.0000000000000001."
   },
   "title": {
-    "intoverflow": "The Distance from Earth to the Moon"
+    "intoverflow": "The Distance from Earth to the Moon",
+    "lossoftrailingdigits": "Decimal Addition"
   },
   "function": {
     "name": {
-      "intoverflow": "Integer Overflow"
+      "intoverflow": "Integer Overflow",
+      "lossoftrailingdigits": "Loss of Trailing Digits"
     },
     "description": {
-      "intoverflow": "Integer overflow can occur."
+      "intoverflow": "Integer overflow can occur.",
+      "lossoftrailingdigits": "Loss of trailing digits can occur."
     }
   },
   "description": {

@@ -1,20 +1,25 @@
 {
   "msg": {
     "answer_is_correct": "正解です。",
+    "enter_decimal_value": "絶対値が1未満の小数を入力して下さい。",
     "question_reach_the_moon": "0.1mmの厚さの紙を何回折りたたむと、地球から月の距離(384,400km)に到達するでしょうか？"
   },
   "note": {
-    "intoverflow": "63以上の数を入力すると、整数オーバーフローが発生します。"
+    "intoverflow": "63以上の数を入力すると、整数オーバーフローが発生します。",
+    "lossoftrailingdigits": "0.0000000000000001を入力すると、情報欠落が発生します。 "
   },
   "title": {
-    "intoverflow": "月までの距離"
+    "intoverflow": "月までの距離",
+    "lossoftrailingdigits": "小数の足し算"
   },
   "function": {
     "name": {
-      "intoverflow": "整数オーバーフロー"
+      "intoverflow": "整数オーバーフロー",
+      "lossoftrailingdigits": "情報落ち"
     },
     "description": {
-      "intoverflow": "整数オーバーフローを発生させることができます。"
+      "intoverflow": "整数オーバーフローを発生させることができます。",
+      "lossoftrailingdigits": "情報落ちを発生させることができます。"
     }
   },
   "description": {

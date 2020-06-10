@@ -23,5 +23,12 @@ func main() {
 		troubles.PostIntOverflow(ctx)
 	})
 
+	router.GET("/lotd", func(ctx *gin.Context) {
+		troubles.GetLossOfTrailingDigits(ctx)
+	})
+	router.POST("/lotd", func(ctx *gin.Context) {
+		troubles.PostLossOfTrailingDigits(ctx)
+	})
+
 	router.Run()
 }

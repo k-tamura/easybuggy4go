@@ -5,6 +5,11 @@ import (
 	"strconv"
 )
 
+func GetIntOverflow(ctx *gin.Context) {
+	ctx.HTML(200, "intoverflow.html", gin.H{"times": "", "description": "",
+		"key_title": "title.intoverflow", "key_note": "note.intoverflow"})
+}
+
 func PostIntOverflow(ctx *gin.Context) {
 	description := ""
 	strTimes := ctx.PostForm("times")
@@ -29,10 +34,5 @@ func PostIntOverflow(ctx *gin.Context) {
 		}
 	}
 	ctx.HTML(200, "intoverflow.html", gin.H{"times": strTimes, "description": description,
-		"key_title": "title.intoverflow", "key_note": "note.intoverflow"})
-}
-
-func GetIntOverflow(ctx *gin.Context) {
-	ctx.HTML(200, "intoverflow.html", gin.H{"times": "", "description": "",
 		"key_title": "title.intoverflow", "key_note": "note.intoverflow"})
 }
